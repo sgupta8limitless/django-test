@@ -16,6 +16,13 @@ pipeline {
             }
             
         }
+        stage("Stopping Container"){
+            
+            steps{
+                bat "docker stop django-demo-app"
+            }
+            
+        }
         
          stage("Deleting Container"){
             
