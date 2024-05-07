@@ -6,7 +6,7 @@ import signal
 
 @api_view(["GET"])
 def testing(request):
-    return Response({"message":"all good"})
+    return Response({"message":"all good +1"})
 
 @api_view(["GET"])
 def crash(request):
